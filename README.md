@@ -117,7 +117,7 @@
   <div class="container">
     <h1>⚔️ text de chloé ⚔️</h1>
 
-    <img src="image.jpg" alt="Image centrale">
+    <img src="miffy.png" alt="Image centrale">
 
     <div class="welcome">
       🔥 Bienvenue chez chloé 🔥
