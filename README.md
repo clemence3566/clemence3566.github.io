@@ -29,13 +29,13 @@
     }
 
     /* Dark anime overlay */
-    body::before {
+    /* body::before {
       content: "";
       position: absolute;
       inset: 0;
       background: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(10,10,30,0.9));
       backdrop-filter: blur(3px);
-    }
+    } */
 
     .container {
       position: relative;
@@ -66,7 +66,7 @@
       max-width: 80%;
       margin-bottom: 40px;
       border-radius: 15px;
- /*     box-shadow: 0 0 30px rgba(0, 234, 255, 0.7); */
+      box-shadow: 0 0 30px rgba(0, 234, 255, 0.7); 
       animation: float 4s ease-in-out infinite;
     }
 
