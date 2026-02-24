@@ -66,7 +66,7 @@
       max-width: 80%;
       margin-bottom: 40px;
       border-radius: 15px;
-      box-shadow: 0 0 30px rgba(0, 234, 255, 0.7);
+ /*     box-shadow: 0 0 30px rgba(0, 234, 255, 0.7); */
       animation: float 4s ease-in-out infinite;
     }
 
