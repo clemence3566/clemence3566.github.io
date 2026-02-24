@@ -2,11 +2,11 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>⚔️ chloé ⚔️</title>
+  <title>Bienvenue chez chloé </title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Police stylée -->
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;800&display=swap" rel="stylesheet">
+  <!-- Google Font (style anime moderne) -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&display=swap" rel="stylesheet">
 
   <style>
     * {
@@ -17,31 +17,24 @@
 
     body {
       height: 100vh;
-      font-family: 'Cinzel', serif;
+      font-family: 'Orbitron', sans-serif;
       color: white;
       text-align: center;
       overflow: hidden;
+
+      /* Background image */
       background: url('a.jpg') no-repeat center center fixed;
       background-size: cover;
       position: relative;
     }
 
-    /* Ombre sombre */
+    /* Dark anime overlay */
     body::before {
       content: "";
       position: absolute;
       inset: 0;
-      background: linear-gradient(to bottom, rgba(0,0,0,0.85), rgba(40,0,0,0.9));
-    }
-
-    /* Effet brume animé */
-    body::after {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: radial-gradient(circle at 30% 70%, rgba(255,0,0,0.15), transparent 60%),
-                  radial-gradient(circle at 70% 30%, rgba(255,0,0,0.15), transparent 60%);
-      animation: smoke 8s infinite alternate ease-in-out;
+      background: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(10,10,30,0.9));
+      backdrop-filter: blur(3px);
     }
 
     .container {
@@ -52,61 +45,60 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      animation: fadeIn 2s ease-in-out;
     }
 
     h1 {
       font-size: 3.5rem;
       font-weight: 800;
-      letter-spacing: 4px;
+      letter-spacing: 3px;
       margin-bottom: 40px;
-      color: #ff2e2e;
-      text-shadow:
-        0 0 10px #ff0000,
-        0 0 20px #ff0000,
-        0 0 40px #ff4c4c;
-      animation: flame 1.5s infinite alternate;
+      color: #ffffff;
+      text-shadow: 
+        0 0 10px #00eaff,
+        0 0 20px #00eaff,
+        0 0 40px #0077ff;
+      animation: glow 2s infinite alternate;
     }
 
     img {
-      width: 300px;
+      width: 280px;
       max-width: 80%;
       margin-bottom: 40px;
-      border-radius: 10px;
-      box-shadow: 
-        0 0 20px #ff0000,
-        0 0 40px rgba(255, 0, 0, 0.8);
-      animation: aura 3s infinite ease-in-out;
+      border-radius: 15px;
+      box-shadow: 0 0 30px rgba(0, 234, 255, 0.7);
+      animation: float 4s ease-in-out infinite;
     }
 
     .welcome {
       font-size: 1.8rem;
-      letter-spacing: 3px;
-      color: #ffffff;
+      letter-spacing: 2px;
+      color: #ff4c4c;
       text-shadow: 0 0 15px #ff0000;
-      animation: fadeIn 3s ease forwards;
+      animation: fadeInUp 2s ease forwards;
     }
 
     /* Animations */
 
-    @keyframes flame {
-      from { text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000; }
-      to { text-shadow: 0 0 20px #ff4c4c, 0 0 50px #ff0000; }
+    @keyframes glow {
+      from { text-shadow: 0 0 10px #00eaff, 0 0 20px #00eaff; }
+      to { text-shadow: 0 0 20px #00eaff, 0 0 40px #0077ff; }
     }
 
-    @keyframes aura {
-      0% { box-shadow: 0 0 20px #ff0000; }
-      50% { box-shadow: 0 0 50px #ff2e2e; }
-      100% { box-shadow: 0 0 20px #ff0000; }
-    }
-
-    @keyframes smoke {
-      from { transform: translateY(0px); opacity: 0.6; }
-      to { transform: translateY(-20px); opacity: 0.9; }
+    @keyframes float {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-15px); }
+      100% { transform: translateY(0px); }
     }
 
     @keyframes fadeIn {
       from { opacity: 0; }
       to { opacity: 1; }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
     }
 
   </style>
@@ -115,12 +107,12 @@
 <body>
 
   <div class="container">
-    <h1>⚔️ text de chloé ⚔️</h1>
+    <h1>texte de chloé </h1>
 
     <img src="miffy.png" alt="Image centrale">
 
     <div class="welcome">
-      🔥 Bienvenue chez chloé 🔥
+      ✨ Bienvenue chez chloé ✨
     </div>
   </div>
 
