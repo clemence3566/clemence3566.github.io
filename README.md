@@ -114,7 +114,7 @@
     <div class="welcome">
       ✨ Bienvenue chez chloé ✨
 
-      labubu
+     <br> labubu
     </div>
   </div>
 
